@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Recommendation System</title>
+</head>
+
+<style>
+    .center-div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+    }
+</style>
+<body>
+    <!-- Background Video -->
+    <div class="video-conatiner">
+        <video autoplay muted loop id="bg-video">
+            <source src="{{url_for('static', filename='Travel Agency Logo Advert.mp4')}}">
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+
+    <div class="center-div">
+        <h1>Welcome to the Travel Recommendation System</h1>
+        <a href="/recommendation" class='btn'> Travel Recommendation </a>
+    </div>
+</body>
+</html>
